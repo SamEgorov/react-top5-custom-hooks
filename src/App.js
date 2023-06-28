@@ -1,11 +1,11 @@
 import React from 'react';
-import Debounce from "./components/Debounce";
+import Request from "./components/Request";
 
 const App = () => {
 
     return (
         <div>
-            <Debounce/>
+            <Request />
         </div>
     );
 };
