@@ -1,5 +1,8 @@
 import {useEffect, useRef} from "react";
 
+// TODO добавить условие при котором не создавать новый обсервер. Например когда дошли до последнец страницы.
+// TODO Добавить и проверять параметр isLoading в useEffect, чтобы выходить из него если еще идет загрузка
+
 export default function useScroll(parentRef, childRef, callback) {
     // Intersection observer - для отслеживания видимости элемента на странице
     const observer = useRef()
@@ -28,4 +31,4 @@ export default function useScroll(parentRef, childRef, callback) {
             observer.current.unobserve(childRef.current)
         }
     }, [callback])
-} 
+}

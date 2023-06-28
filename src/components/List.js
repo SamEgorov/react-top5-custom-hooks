@@ -4,7 +4,7 @@ import useScroll from "../hooks/useScroll";
 const List = () => {
     const [todos, setTodos] = useState([])
     const [page, setPage] = useState(1)
-    const limit = 10
+    const limit = 20
     const parentRef = useRef()
     const childRef = useRef()
 
@@ -18,10 +18,6 @@ const List = () => {
                 setPage(prev => prev + 1)
             })
     }
-
-    // useEffect(() => {
-    //     fetchTodos(limit, page)
-    // }, [])
 
     return (
         <div ref={parentRef} style={{height: '80vh', overflow: 'auto'}}>
