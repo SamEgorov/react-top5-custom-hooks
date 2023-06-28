@@ -7,9 +7,10 @@ const App = () => {
 
     return (
         <div>
-            <h1>{login.value}</h1>
-            <input type="text" placeholder='Login' onChange={(e) => login.onChange(e)} value={login.value}/>
-            <input type="password" placeholder='Password' onChange={(e) => pass.onChange(e)} value={pass.value}/>
+            <h2>{login.value}</h2>
+            <h2>{pass.value}</h2>
+            <input type="text" placeholder='Login' {...login} />
+            <input type="password" placeholder='Password' {...pass} />
         </div>
     );
 };
