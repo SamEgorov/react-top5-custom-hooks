@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import Hover from "./components/Hover";
+import List from "./components/List";
 
 const App = () => {
 
     return (
         <div>
-            <Hover />
+            <List />
         </div>
     );
 };
