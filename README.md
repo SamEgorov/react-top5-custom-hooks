@@ -13,13 +13,7 @@ const login = useInput('')
 
 ...
 
-input
-type = "text"
-placeholder = 'Login'
-{...
-    login
-}
-/>
+<input type="text" placeholder='Login' {...login} />
 ```
 
 ## useHover
