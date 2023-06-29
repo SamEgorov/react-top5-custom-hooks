@@ -3,7 +3,7 @@ import {useCallback, useRef} from "react";
 export default function useDebounce(callback, delay) {
     const timer = useRef()
 
-    // Создаем функцию, которая будет вызываться только 1 раз или при изменении callback или delay
+    // Creates function that will be called only once or after change callback or delay
     // useCallback caches the function between renders
     const debouncedCallback = useCallback((...args) => {
         /** If callback is changed (it means customer changing the query)

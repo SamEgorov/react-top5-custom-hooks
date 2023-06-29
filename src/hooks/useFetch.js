@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-export const useFetch = (callback) => {
+export default function useFetch (callback) {
     const [isLoading, setIsLoading] = useState(false)
     const [error, setError] = useState('')
 

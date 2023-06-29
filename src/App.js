@@ -1,11 +1,11 @@
 import React from 'react';
-import Request from "./components/Request";
+import Scroll from "./components/Scroll";
 
 const App = () => {
 
     return (
         <div>
-            <Request />
+            <Scroll />
         </div>
     );
 };

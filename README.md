@@ -50,17 +50,16 @@ function onChange(e) {
 <input type="text" value={value} onChange={onChange}/>
 ```
 
-## useScroll (Infinite pagination)
+## useObserver (Infinite pagination)
 
 A hook for creation the infinite pagination
 
 ### Usage
+Look at src/components/Scroll for better understanding
 
 ```javascript
-const parentRef = useRef()
-const childRef = useRef()
-
-useScroll(parentRef, childRef, callback)
+const refElement = useRef()
+useObserver(refElement, isLoading, conditionForCallback, callback);
 
 ...
 
@@ -70,7 +69,7 @@ useScroll(parentRef, childRef, callback)
             {item.id}. {item.title}
         </div>
     )}
-    <div ref={childRef}></div>
+    <div ref={refElement}></div>
 </div>
 ```
 
